@@ -1,0 +1,133 @@
+.benefits {
+    padding: 69px 0 78px 0;
+    min-height: 470px;
+    background-color: #f6f6f6;
+    &__wrapper {
+        margin-top: 65px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        text-align: center;
+        width: 237px;
+        a {
+            color: #ff0000;
+            text-decoration: underline;
+        }
+    }
+    &__image {
+        width: 70px;
+        display: block;
+        margin: 0 auto;
+        img {
+            width: 70px;
+            height: 70px;
+        }
+        &_animated {
+            animation: heartbeat 1.5s ease infinite;
+            &:hover {
+                animation-play-state: paused;
+            }
+        }
+    }
+    &__desc {
+        color: #0d0d0d;
+        font-size: 14px;
+        font-weight: 300;
+    }
+    &__name {
+        margin: 38px 0 25px 0;
+        color: #0d0d0d;
+        font-size: 18px;
+        font-weight: 700;
+    }
+}
+
+@media(max-width: 1200px) {
+    .benefits {
+        &__wrapper {
+            //flex-direction: column;
+        }
+        &__item {
+            img {}
+        }
+        &__name {}
+    }
+}
+
+@media(max-width: 991px) {
+    .benefits {
+        &__wrapper {
+            //flex-direction: column;
+        }
+        &__item {
+            img {}
+        }
+        &__name {}
+    }
+}
+
+@media(max-width: 767px) {
+    br {
+        display: none;
+    }
+    .benefits {
+        padding: 50px 0 50px 0;
+        &__wrapper {
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+        }
+        &__item {
+            margin-top: 20px;
+            width: 90%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &__image {
+            order: 2;
+            margin: 0 10px;
+        }
+        &__name {
+            margin: 0;
+            order: 1;
+            width: 25%;
+        }
+        &__desc {
+            order: 3;
+            width: 50%;
+            text-align: left;
+        }
+    }
+}
+
+@media(max-width: 575px) {
+    .benefits {
+        padding: 40px 0 40px 0;
+        &__wrapper {
+            margin-top: 20px;
+        }
+        &__item {
+            width: 65%;
+            display: block;
+            font-size: 13px;
+            margin-top: 20px;
+            justify-content: center;
+        }
+        &__image {
+            margin: 0 auto;
+        }
+        &__name {
+            width: auto;
+            font-size: 15px;
+            line-height: 15px;
+            margin: 15px 0 5px 0;
+        }
+        &__desc {
+            text-align: center;
+            width: auto;
+        }
+    }
+}

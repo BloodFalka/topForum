@@ -1,0 +1,14 @@
+.pageup {
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    &:hover,
+    &:visited {
+        text-decoration: none;
+    }
+    i {
+        font-size: 40px;
+        color: $main-color;
+    }
+}

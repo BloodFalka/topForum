@@ -1,0 +1,127 @@
+.carousel {
+    padding: 81px 0;
+    &__inner {
+        position: relative;
+        width: 750px;
+        margin: 0 auto;
+        .slick-prev,
+        .slick-next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: -66px;
+            background-color: #fff;
+            border: none;
+            img {
+                width: 31px;
+                height: 50px;
+            }
+            &:active,
+            &:focus {
+                outline: none;
+            }
+        }
+        .slick-next {
+            right: -66px;
+            left: auto;
+        }
+        .slick-slide {
+            outline: none;
+        }
+    }
+}
+
+@media(max-width: 1200px) {}
+
+@media(max-width: 991px) {
+    .carousel {
+        .slick-prev,
+        .slick-next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: -66px;
+            background-color: #fff;
+            border: none;
+            img {
+                width: 31px;
+                height: 50px;
+            }
+        }
+        .slick-next {
+            right: -66px;
+            left: auto;
+        }
+        .slick-arrow {
+            display: none;
+        }
+        .slick-dots {
+            padding: 0;
+            position: absolute;
+            display: block;
+            width: 100%;
+            list-style: none;
+            text-align: center;
+            li {
+                position: relative;
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                margin: 0 5px;
+                padding: 0;
+                cursor: pointer;
+                button {
+                    font-size: 0;
+                    line-height: 0;
+                    display: block;
+                    width: 20px;
+                    height: 20px;
+                    cursor: pointer;
+                    border: 0;
+                    border-radius: 100%;
+                    outline: none;
+                    &:hover,
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+        }
+        .slick-dots .slick-active button {
+            background-color: $main-color;
+        }
+    }
+}
+
+@media(max-width: 767px) {
+    .carousel {
+        &__inner {
+            width: 100%;
+            margin: 0 auto;
+            img {
+                width: 100%;
+                margin: 0 auto;
+            }
+        }
+        padding: 50px 0 50px 0;
+    }
+}
+
+@media(max-width: 575px) {
+    .carousel {
+        padding: 40px 0 40px 0;
+        .slick-dots {
+            li {
+                width: 10px;
+                height: 10px;
+                margin: 0 5px;
+                padding: 0;
+                button {
+                    padding: 0;
+                    width: 10px;
+                    height: 10px;
+                }
+            }
+        }
+    }
+}

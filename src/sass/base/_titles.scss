@@ -1,0 +1,42 @@
+.title {
+    color: #0d0d0d;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    &_left {
+        font-size: 36px;
+        line-height: 37px;
+        text-align: left;
+        color: #ffffff;
+    }
+}
+
+@media(max-width: 1200px) {
+    .title {}
+}
+
+@media(max-width: 991px) {
+    .title {
+        &_left {
+            text-align: center;
+        }
+    }
+}
+
+@media(max-width: 767px) {
+    .title {
+        &_left {
+            font-size: 30px;
+            text-align: center;
+        }
+    }
+}
+
+@media(max-width: 575px) {
+    .title {
+        font-size: 20px;
+        line-height: 20px;
+    }
+}

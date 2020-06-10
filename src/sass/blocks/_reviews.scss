@@ -1,0 +1,110 @@
+.reviews {
+    padding-bottom: 71px;
+    &__items {
+        margin-top: 62px;
+    }
+    &-item {
+        margin-top: 100px;
+        display: flex;
+        justify-content: flex-start;
+        &:nth-child(1) {
+            margin-top: 0;
+        }
+        &__img {
+            margin-right: 63px;
+            width: 169px;
+            height: 169px;
+        }
+        &__content {
+            max-width: 650px;
+        }
+        &__name {
+            font-size: 18px;
+            line-height: 18px;
+            font-weight: 700;
+            color: #0d0d0d;
+        }
+        &__achievement {
+            margin-top: 10px;
+            font-size: 14px;
+            line-height: 14px;
+            font-weight: 300;
+            color: #646464;
+        }
+        &__comment {
+            margin-top: 20px;
+            font-size: 16px;
+            font-weight: 300;
+            color: #0d0d0d;
+            p {
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 1200px) {}
+
+@media(max-width: 991px) {}
+
+@media(max-width: 767px) {
+    .reviews {
+        padding-bottom: 50px;
+        &__items {
+            margin-top: 50px;
+        }
+        &-item {
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+            &:nth-child(1) {
+                margin-top: 0;
+            }
+            &__img {
+                margin: 0 0 20px 0;
+            }
+            &__name {
+                text-align: center;
+            }
+            &__achievement {
+                text-align: center;
+            }
+            &__comment {
+                display: block;
+                margin: 0 auto;
+                margin-top: 10px;
+                width: 70%;
+                p {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 575px) {
+    .reviews {
+        padding-bottom: 40px;
+        &__items {
+            margin-top: 40px;
+        }
+        &-item {
+            margin-top: 40px;
+            &:nth-child(1) {
+                margin-top: 0;
+            }
+            &__name {
+                font-size: 15px;
+            }
+            &__achievement {
+                font-size: 12px;
+            }
+            &__comment {
+                font-size: 14px;
+                width: 80%;
+            }
+        }
+    }
+}
